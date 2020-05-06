@@ -24,12 +24,14 @@ spec:
           env:
             - name: PROVISIONER_NAME
               value: fuseim.pri/ifs
+              # please modify the following two values to your own nfs settings
             - name: NFS_SERVER
               value: 192.168.168.162
             - name: NFS_PATH
               value: /ResinDemo
       volumes:
         - name: nfs-client-root
+          # please modify the following values to your own nfs settings
           nfs:
             server: 192.168.168.162
             path: /ResinDemo
