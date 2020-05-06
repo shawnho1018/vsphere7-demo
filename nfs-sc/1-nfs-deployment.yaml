@@ -25,11 +25,11 @@ spec:
             - name: PROVISIONER_NAME
               value: fuseim.pri/ifs
             - name: NFS_SERVER
-              value: 10.9.25.54
+              value: 192.168.168.162
             - name: NFS_PATH
-              value: /sc-multiple
+              value: /ResinDemo
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 10.9.25.54
-            path: /sc-multiple
+            server: 192.168.168.162
+            path: /ResinDemo

@@ -30,8 +30,6 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: nfs-client-provisioner
-    # please change to your service account's namespace
-    namespace: default
 roleRef:
   kind: ClusterRole
   name: nfs-client-provisioner-runner
